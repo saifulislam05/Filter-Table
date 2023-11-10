@@ -10,7 +10,35 @@
     <!-- javascript file  -->
     <script src="script.js" defer></script>
   </head>
-  <body>
-    
+    <body>
+    <header class="w-11/12 mx-auto my-4">
+      <h1 class="text-3xl font-semibold">Filter the table</h1>
+      <div class="input_wrapper w-full my-4">
+        <input
+          id="input_box"
+          type="text"
+          placeholder="Search Emoji here..."
+          class="input input-bordered  w-6/12"
+        />
+      </div>
+    </header>
+
+    <main class="outputWrapper w-11/12 mx-auto">
+     
+      <div class="overflow-x-auto">
+        <table class="table">
+          <!-- head -->
+          <thead>
+            <tr class="text-base border-b-4">
+              <th>Capital Name</th>
+              <th>Country Name</th>
+            </tr>
+          </thead>
+          <tbody id="table_body" >
+            <!-- table row will come dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </main>
   </body>
 </html>
